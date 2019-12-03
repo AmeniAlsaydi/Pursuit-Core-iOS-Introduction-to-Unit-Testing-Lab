@@ -24,6 +24,10 @@
 		B7F4F0102396B0D6003154BC /* StarWarsCrawlController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F00F2396B0D6003154BC /* StarWarsCrawlController.swift */; };
 		B7F4F0162396D30C003154BC /* StarWarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F0152396D30C003154BC /* StarWarsTests.swift */; };
 		B7F4F01E2396EE3D003154BC /* TriviaData.json in Resources */ = {isa = PBXBuildFile; fileRef = B7F4F01D2396EE3D003154BC /* TriviaData.json */; };
+		B7F4F052239711E2003154BC /* TriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F051239711E2003154BC /* TriviaTests.swift */; };
+		B7F4F054239713D6003154BC /* TriviaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F053239713D6003154BC /* TriviaModel.swift */; };
+		B7F4F05623971B0D003154BC /* TriviaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F05523971B0D003154BC /* TriviaController.swift */; };
+		B7F4F05823972174003154BC /* TriviaAnswersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F05723972174003154BC /* TriviaAnswersController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		B7F4F00F2396B0D6003154BC /* StarWarsCrawlController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCrawlController.swift; sourceTree = "<group>"; };
 		B7F4F0152396D30C003154BC /* StarWarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsTests.swift; sourceTree = "<group>"; };
 		B7F4F01D2396EE3D003154BC /* TriviaData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TriviaData.json; sourceTree = "<group>"; };
+		B7F4F051239711E2003154BC /* TriviaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaTests.swift; sourceTree = "<group>"; };
+		B7F4F053239713D6003154BC /* TriviaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaModel.swift; sourceTree = "<group>"; };
+		B7F4F05523971B0D003154BC /* TriviaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaController.swift; sourceTree = "<group>"; };
+		B7F4F05723972174003154BC /* TriviaAnswersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaAnswersController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,7 @@
 			children = (
 				B7F4EFC023959A13003154BC /* JokesTests.swift */,
 				B7F4F0152396D30C003154BC /* StarWarsTests.swift */,
+				B7F4F051239711E2003154BC /* TriviaTests.swift */,
 				B7F4EFC223959A13003154BC /* Info.plist */,
 			);
 			path = UnitTestingLabTests;
@@ -149,6 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				B7F4F01D2396EE3D003154BC /* TriviaData.json */,
+				B7F4F053239713D6003154BC /* TriviaModel.swift */,
+				B7F4F05523971B0D003154BC /* TriviaController.swift */,
+				B7F4F05723972174003154BC /* TriviaAnswersController.swift */,
 			);
 			path = Trivia;
 			sourceTree = "<group>";
@@ -259,13 +271,16 @@
 			files = (
 				B7F4EFCF23959BA7003154BC /* JokesModel.swift in Sources */,
 				B7F4F0052395BAC7003154BC /* Bundle+Extensions.swift in Sources */,
+				B7F4F05823972174003154BC /* TriviaAnswersController.swift in Sources */,
 				B7F4EFAE23959A10003154BC /* JokesController.swift in Sources */,
 				B7F4EFAA23959A10003154BC /* AppDelegate.swift in Sources */,
 				B7F4EFAC23959A10003154BC /* SceneDelegate.swift in Sources */,
 				B7F4F0102396B0D6003154BC /* StarWarsCrawlController.swift in Sources */,
+				B7F4F054239713D6003154BC /* TriviaModel.swift in Sources */,
 				B7F4F0072395F36F003154BC /* JokesDetailController.swift in Sources */,
 				B7F4F00E2396064C003154BC /* StarWarsModel.swift in Sources */,
 				B7F4F00C23960547003154BC /* StarWarsController.swift in Sources */,
+				B7F4F05623971B0D003154BC /* TriviaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7F4F0162396D30C003154BC /* StarWarsTests.swift in Sources */,
+				B7F4F052239711E2003154BC /* TriviaTests.swift in Sources */,
 				B7F4EFC123959A13003154BC /* JokesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
