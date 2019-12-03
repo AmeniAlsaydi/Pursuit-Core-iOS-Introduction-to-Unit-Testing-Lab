@@ -25,6 +25,13 @@ class StarWarsController: UIViewController {
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let crawlVC = segue.destination as? StarWarsCrawlController, let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("failed to get indexPath and crawlVC")
+        }
+        crawlVC.episode = episodes[indexPath.row]
+    }
+    
     func loadData() {
         let filename = "StarWarsData"
         let ext = "json"

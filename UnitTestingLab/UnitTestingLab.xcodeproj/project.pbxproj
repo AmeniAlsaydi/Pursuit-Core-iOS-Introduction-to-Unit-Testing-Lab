@@ -21,6 +21,7 @@
 		B7F4F00A2396049A003154BC /* StarWarsData.json in Resources */ = {isa = PBXBuildFile; fileRef = B7F4F0092396049A003154BC /* StarWarsData.json */; };
 		B7F4F00C23960547003154BC /* StarWarsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F00B23960547003154BC /* StarWarsController.swift */; };
 		B7F4F00E2396064C003154BC /* StarWarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F00D2396064C003154BC /* StarWarsModel.swift */; };
+		B7F4F0102396B0D6003154BC /* StarWarsCrawlController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F00F2396B0D6003154BC /* StarWarsCrawlController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B7F4F0092396049A003154BC /* StarWarsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StarWarsData.json; sourceTree = "<group>"; };
 		B7F4F00B23960547003154BC /* StarWarsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsController.swift; sourceTree = "<group>"; };
 		B7F4F00D2396064C003154BC /* StarWarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsModel.swift; sourceTree = "<group>"; };
+		B7F4F00F2396B0D6003154BC /* StarWarsCrawlController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCrawlController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				B7F4F0092396049A003154BC /* StarWarsData.json */,
 				B7F4F00B23960547003154BC /* StarWarsController.swift */,
+				B7F4F00F2396B0D6003154BC /* StarWarsCrawlController.swift */,
 				B7F4F00D2396064C003154BC /* StarWarsModel.swift */,
 			);
 			path = StarWarz;
@@ -244,6 +247,7 @@
 				B7F4EFAE23959A10003154BC /* JokesController.swift in Sources */,
 				B7F4EFAA23959A10003154BC /* AppDelegate.swift in Sources */,
 				B7F4EFAC23959A10003154BC /* SceneDelegate.swift in Sources */,
+				B7F4F0102396B0D6003154BC /* StarWarsCrawlController.swift in Sources */,
 				B7F4F0072395F36F003154BC /* JokesDetailController.swift in Sources */,
 				B7F4F00E2396064C003154BC /* StarWarsModel.swift in Sources */,
 				B7F4F00C23960547003154BC /* StarWarsController.swift in Sources */,
