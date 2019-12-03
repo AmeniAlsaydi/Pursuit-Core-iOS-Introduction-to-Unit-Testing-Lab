@@ -29,8 +29,8 @@ extension Episode {
         var episodes = [Episode]()
         
         do {
-            let episodeData = try JSONDecoder().decode(Episode.self, from: data)
-            episodes = [episodeData]
+            let episodeData = try JSONDecoder().decode(StarWarsEpisode.self, from: data)
+            episodes = episodeData.results
         } catch {
             fatalError("decoding error:\(error)") // returns nil
         }
