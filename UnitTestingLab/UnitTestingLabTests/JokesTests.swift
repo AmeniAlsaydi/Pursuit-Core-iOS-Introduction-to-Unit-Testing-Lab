@@ -10,6 +10,10 @@ import XCTest
 @testable import UnitTestingLab
 
 class JokesTests: XCTestCase {
+    // arrange
+    let filename = "JokesData"
+    let ext = "json"
+    
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,12 +24,10 @@ class JokesTests: XCTestCase {
     }
 
     func testingReadingDataFromJokesFile() {
-        //arrange
-        let filename = "JokesData"
-        let ext = "json"
-        
+        //arrange above
+     
         // act
-        let data = Bundle.readRawJSONData(filename: filename, ext: ext)
+        let data = getRawData()
 
         // assert
          XCTAssertNotNil(data)
@@ -34,12 +36,9 @@ class JokesTests: XCTestCase {
     
     func testParseJSONToJokesArray() {
         // arrange
-        let filename = "JokesData"
-        let ext = "json"
-        let data = Bundle.readRawJSONData(filename: filename, ext: ext)
-        
+       
         // act
-        let jokes = Joke.getJokes(from: data)
+        let jokes = getJokes()
         
         // asserts
         XCTAssertGreaterThan(jokes.count, 0, "jokes should be greater than 0")
@@ -47,10 +46,7 @@ class JokesTests: XCTestCase {
     }
     func testFirstJoke() {
         // arrange
-        let filename = "JokesData"
-        let ext = "json"
-        let data = Bundle.readRawJSONData(filename: filename, ext: ext)
-        let jokes = Joke.getJokes(from: data)
+        let jokes = getJokes()
         
         //act
         let firstJoke = jokes.first!
@@ -60,4 +56,16 @@ class JokesTests: XCTestCase {
         
     }
 
+}
+
+
+extension JokesTests {
+    func getRawData() -> Data {
+        return Bundle.readRawJSONData(filename: filename, ext: ext)
+    }
+    
+    func getJokes() -> [Joke] {
+        let data = getRawData()
+        return Joke.getJokes(from: data)
+    }
 }

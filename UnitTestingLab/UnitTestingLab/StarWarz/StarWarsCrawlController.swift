@@ -20,8 +20,11 @@ class StarWarsCrawlController: UIViewController {
     }
     
     func updateUI() {
-        guard let selectedEpisode = episode else { fatalError("xyz")}
+        guard let selectedEpisode = episode else { fatalError("check prepare for segue")}
+        
         openingCrawl.text = selectedEpisode.openingCrawl
+        title = selectedEpisode.title
+        
         
     }
 

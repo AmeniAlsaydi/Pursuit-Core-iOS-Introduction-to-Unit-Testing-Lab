@@ -13,7 +13,7 @@
 		B7F4EFB123959A10003154BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F4EFAF23959A10003154BC /* Main.storyboard */; };
 		B7F4EFB323959A13003154BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F4EFB223959A13003154BC /* Assets.xcassets */; };
 		B7F4EFB623959A13003154BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F4EFB423959A13003154BC /* LaunchScreen.storyboard */; };
-		B7F4EFC123959A13003154BC /* UnitTestingLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4EFC023959A13003154BC /* UnitTestingLabTests.swift */; };
+		B7F4EFC123959A13003154BC /* JokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4EFC023959A13003154BC /* JokesTests.swift */; };
 		B7F4EFCD23959B5C003154BC /* JokesData.json in Resources */ = {isa = PBXBuildFile; fileRef = B7F4EFCC23959B5C003154BC /* JokesData.json */; };
 		B7F4EFCF23959BA7003154BC /* JokesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4EFCE23959BA7003154BC /* JokesModel.swift */; };
 		B7F4F0052395BAC7003154BC /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F0042395BAC7003154BC /* Bundle+Extensions.swift */; };
@@ -22,6 +22,8 @@
 		B7F4F00C23960547003154BC /* StarWarsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F00B23960547003154BC /* StarWarsController.swift */; };
 		B7F4F00E2396064C003154BC /* StarWarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F00D2396064C003154BC /* StarWarsModel.swift */; };
 		B7F4F0102396B0D6003154BC /* StarWarsCrawlController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F00F2396B0D6003154BC /* StarWarsCrawlController.swift */; };
+		B7F4F0162396D30C003154BC /* StarWarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F0152396D30C003154BC /* StarWarsTests.swift */; };
+		B7F4F01E2396EE3D003154BC /* TriviaData.json in Resources */ = {isa = PBXBuildFile; fileRef = B7F4F01D2396EE3D003154BC /* TriviaData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,7 @@
 		B7F4EFB523959A13003154BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7F4EFB723959A13003154BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7F4EFBC23959A13003154BC /* UnitTestingLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7F4EFC023959A13003154BC /* UnitTestingLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingLabTests.swift; sourceTree = "<group>"; };
+		B7F4EFC023959A13003154BC /* JokesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesTests.swift; sourceTree = "<group>"; };
 		B7F4EFC223959A13003154BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7F4EFCC23959B5C003154BC /* JokesData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JokesData.json; sourceTree = "<group>"; };
 		B7F4EFCE23959BA7003154BC /* JokesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesModel.swift; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		B7F4F00B23960547003154BC /* StarWarsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsController.swift; sourceTree = "<group>"; };
 		B7F4F00D2396064C003154BC /* StarWarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsModel.swift; sourceTree = "<group>"; };
 		B7F4F00F2396B0D6003154BC /* StarWarsCrawlController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCrawlController.swift; sourceTree = "<group>"; };
+		B7F4F0152396D30C003154BC /* StarWarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsTests.swift; sourceTree = "<group>"; };
+		B7F4F01D2396EE3D003154BC /* TriviaData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TriviaData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			children = (
 				B7F4EFCB23959B2D003154BC /* Joke */,
 				B7F4F008239602A8003154BC /* StarWarz */,
+				B7F4F0172396EA52003154BC /* Trivia */,
 				B7F4EFA923959A10003154BC /* AppDelegate.swift */,
 				B7F4EFAB23959A10003154BC /* SceneDelegate.swift */,
 				B7F4F0042395BAC7003154BC /* Bundle+Extensions.swift */,
@@ -111,7 +116,8 @@
 		B7F4EFBF23959A13003154BC /* UnitTestingLabTests */ = {
 			isa = PBXGroup;
 			children = (
-				B7F4EFC023959A13003154BC /* UnitTestingLabTests.swift */,
+				B7F4EFC023959A13003154BC /* JokesTests.swift */,
+				B7F4F0152396D30C003154BC /* StarWarsTests.swift */,
 				B7F4EFC223959A13003154BC /* Info.plist */,
 			);
 			path = UnitTestingLabTests;
@@ -137,6 +143,14 @@
 				B7F4F00D2396064C003154BC /* StarWarsModel.swift */,
 			);
 			path = StarWarz;
+			sourceTree = "<group>";
+		};
+		B7F4F0172396EA52003154BC /* Trivia */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4F01D2396EE3D003154BC /* TriviaData.json */,
+			);
+			path = Trivia;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F4F01E2396EE3D003154BC /* TriviaData.json in Resources */,
 				B7F4F00A2396049A003154BC /* StarWarsData.json in Resources */,
 				B7F4EFCD23959B5C003154BC /* JokesData.json in Resources */,
 				B7F4EFB623959A13003154BC /* LaunchScreen.storyboard in Resources */,
@@ -258,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7F4EFC123959A13003154BC /* UnitTestingLabTests.swift in Sources */,
+				B7F4F0162396D30C003154BC /* StarWarsTests.swift in Sources */,
+				B7F4EFC123959A13003154BC /* JokesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

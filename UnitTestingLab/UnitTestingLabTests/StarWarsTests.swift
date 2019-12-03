@@ -8,7 +8,13 @@
 
 import XCTest
 
+@testable import UnitTestingLab
+
 class StarWarsTests: XCTestCase {
+    
+    // arrange
+    let filename = "StarWarsData"
+    let ext = "json"
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,16 +24,45 @@ class StarWarsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testParseJsonToArray() {
+        // arrange
+        let expectedEpisodeCount = 7
+        
+        // act
+        let episodes = getEpisodes()
+        
+        // assert
+        XCTAssertEqual(episodes.count, expectedEpisodeCount, "Number of episode should be \(expectedEpisodeCount)")
+        
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testForDirector() {
+        //arrange
+        let expectedDirector = "George Lucas"
+        
+        // act
+        let episodes = getEpisodes()
+        let firstEpisode = episodes.first
+        
+        // assert
+        XCTAssertEqual(expectedDirector, firstEpisode?.director)
+        
     }
+    
 
+}
+
+extension StarWarsTests {
+    // helper functions
+    
+    func getRawData() -> Data {
+        return Bundle.readRawJSONData(filename: filename, ext: ext)
+    }
+    
+    func getEpisodes() -> [Episode] {
+        let data = getRawData()
+        return Episode.getEpisodes(from: data)
+    }
+    
+    
 }

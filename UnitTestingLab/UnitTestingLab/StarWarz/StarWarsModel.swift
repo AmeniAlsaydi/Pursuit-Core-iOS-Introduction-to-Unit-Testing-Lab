@@ -15,11 +15,13 @@ struct StarWarsEpisode: Codable {
 struct Episode: Codable {
     let title: String
     let openingCrawl: String
+    let director: String
     
 
     private enum CodingKeys: String, CodingKey {
         case title
         case openingCrawl = "opening_crawl"
+        case director 
     }
 }
 
