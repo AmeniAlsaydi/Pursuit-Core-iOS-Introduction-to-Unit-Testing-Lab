@@ -197,7 +197,7 @@
             </objects>
             <point key="canvasLocation" x="852.17391304347836" y="129.91071428571428"/>
         </scene>
-        <!--Trivia Controller-->
+        <!--Trivia-->
         <scene sceneID="6DB-Im-ZAE">
             <objects>
                 <viewController id="f7N-1b-mR6" customClass="TriviaController" customModule="UnitTestingLab" customModuleProvider="target" sceneMemberID="viewController">
@@ -227,7 +227,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="2iR-zt-pNU"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Sg5-2k-lAm"/>
+                    <navigationItem key="navigationItem" title="Trivia" id="Sg5-2k-lAm"/>
                     <connections>
                         <outlet property="tableView" destination="15f-Ru-XVX" id="BX5-N1-bAZ"/>
                     </connections>
@@ -370,8 +370,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nbw-6u-8k7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Star Wars" image="paperplane.fill" catalog="system" id="vUk-aT-5Bp"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tbq-hH-cFx">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Tbq-hH-cFx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -389,8 +389,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HOi-bA-Vom" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Trivia" image="questionmark.circle" catalog="system" id="gAS-9T-IzJ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="apY-HX-EgF">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="apY-HX-EgF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
