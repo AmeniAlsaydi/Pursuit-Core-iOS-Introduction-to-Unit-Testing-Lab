@@ -335,6 +335,13 @@
                                     <action selector="answerSelected:" destination="YnT-ia-fga" eventType="touchUpInside" id="vzu-r0-PBx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaV-i4-0Wg">
+                                <rect key="frame" x="20" y="646" width="374" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Xvl-2a-jmK"/>
@@ -345,6 +352,7 @@
                         <outlet property="buttonB" destination="kW3-8l-NxX" id="NW9-GT-H5w"/>
                         <outlet property="buttonC" destination="8ze-Zf-mtN" id="6w8-Lu-4PV"/>
                         <outlet property="buttonD" destination="azg-xY-3bE" id="Bai-Ro-WZd"/>
+                        <outlet property="messageLabel" destination="FaV-i4-0Wg" id="mQv-nN-UPv"/>
                         <outlet property="questionnLabel" destination="PPs-YM-o3w" id="gFy-dh-QDZ"/>
                         <outletCollection property="buttons" destination="ioJ-EN-dFe" collectionClass="NSMutableArray" id="aaA-IK-kig"/>
                         <outletCollection property="buttons" destination="kW3-8l-NxX" collectionClass="NSMutableArray" id="zxG-jN-3Oj"/>

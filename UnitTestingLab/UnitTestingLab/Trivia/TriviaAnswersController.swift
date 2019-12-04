@@ -17,6 +17,7 @@ class TriviaAnswersController: UIViewController {
     @IBOutlet weak var buttonC: UIButton!
     @IBOutlet weak var buttonD: UIButton!
     @IBOutlet var buttons: [UIButton]!
+    @IBOutlet weak var messageLabel: UILabel!
     
     
     
@@ -26,6 +27,7 @@ class TriviaAnswersController: UIViewController {
         super.viewDidLoad()
         displayQuestion()
         buttons.map{ $0.isEnabled = true }
+        messageLabel.text = ""
         
     }
     
@@ -56,11 +58,7 @@ class TriviaAnswersController: UIViewController {
             buttonD.setTitle(options[3], for: .normal)
             
         }
-       
-//        in an action if selected button title is equal to question.correct_answer then turn back ground color green, else turn it red... disable all the buttons after selction
-        
     }
-    
     
     // Actions:
     
@@ -70,20 +68,18 @@ class TriviaAnswersController: UIViewController {
         
         buttons.map{ $0.isEnabled = false }
         
-        if answer == theQuestion.correct_answer {
-            print("correct answer")
+        if answer == theQuestion.correct_answer.removingPercentEncoding {
+            messageLabel.text = "Correct 🥳"
             view.backgroundColor = .green
             
         } else {
-            print("wrong")
+            messageLabel.text = "Wrong 👎🏼 The correct answer was \(theQuestion.correct_answer.removingPercentEncoding ?? ""), DUH"
             view.backgroundColor = .red
         }
     }
-    
-    
-
 }
 
+// Added to allow the buttons to be rounded
 @IBDesignable extension UIButton {
 
     @IBInspectable var borderWidth: CGFloat {
