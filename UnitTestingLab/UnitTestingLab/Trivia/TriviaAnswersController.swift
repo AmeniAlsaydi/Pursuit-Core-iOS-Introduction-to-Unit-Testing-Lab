@@ -49,6 +49,8 @@ class TriviaAnswersController: UIViewController {
             buttonB.setTitle(options[1], for: .normal)
             buttonC.borderColor = .clear
             buttonD.borderColor = .clear
+            buttonC.isEnabled = false
+            buttonD.isEnabled = false 
         }
         
         if options.count > 2 {

@@ -13,14 +13,14 @@ extension Bundle {
     static func readRawJSONData(filename: String, ext: String) -> Data {
         
         guard let fileURL = Bundle.main.url(forResource: filename, withExtension: ext) else {
-            fatalError("resource eith filename \(filename) not found")
+            fatalError("resource with filename \(filename) not found")
         }
         
         var data: Data!
         do {
             data = try Data.init(contentsOf: fileURL)
         } catch {
-            fatalError("contentsmpt found")
+            fatalError("contents not found")
         }
         return data
         
